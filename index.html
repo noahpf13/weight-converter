@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weightconverter</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Enter Weight</h1>
-    <div class="input-section">
-        <input type="number" id="input-box">
-        <label for="input-box" id="input-label">lb</label>
+    <div class="conversion-container">
+        <h1>Convert Your Weight</h1>
+        <div class="input-section">
+            <label for="input-box" id="input-label">lb</label>
+            <input type="number" id="input-box" placeholder="Enter Weight">
+        </div>
+    
+        <button type="button" id="swap-button">change unit</button>
+    
+        <div class="output-section">
+            <label for="output-box" id="output-label">kg</label>
+            <input type="number" id="output-box" readonly placeholder="Result">
+        </div>
     </div>
-
-    <button type="button" id="swap-button">change unit</button>
-
-    <div class="output-section">
-        <input type="number" id="output-box">
-        <label for="output-box" id="output-label">kg</label>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
